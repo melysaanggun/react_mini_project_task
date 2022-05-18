@@ -1,0 +1,23 @@
+.footer {
+    background-color: #1c2960;
+}
+
+.footer h5{
+    font-size: 1.1rem;
+    color: white !important;
+}
+
+.list__item {
+    background-color: transparent !important;
+    padding-left: 0 !important;
+    border: none !important;
+}
+
+.footer .socmed__links span i {
+    padding: 5px;
+}
+
+.copyright {
+    font-size: 0.8rem;
+    font-style: italic;
+}

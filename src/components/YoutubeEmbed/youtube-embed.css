@@ -1,0 +1,17 @@
+.video-responsive {
+    padding-bottom: 56.25%;
+    padding: 0;
+  }
+  
+  .video-responsive iframe {
+    width: 600px;
+    height: 300px;
+    left: 230px;
+    top: 25px;
+    border-radius: 20px;
+  }
+
+  .video-responsive h3 {
+    font-size: 1.2rem;
+    text-align: center;
+  }

@@ -1,0 +1,58 @@
+.abous__wrapper h1{
+    font-weight: bold;
+    color: black;
+    text-align: left;
+}
+
+.abous__wrapper h2{
+    color: black;
+}
+
+.aboutus__header img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 80%;
+    border-radius: 20px;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.about__osf__detail h4 {
+    color: black;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.about__osf__detail span {
+    color: #ff9d33;
+    font-weight: bold;
+}
+
+.about__osf__img__ceo {
+    width: 300px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: 20px;
+    display: block;
+}
+
+.about__osf__detail__ceo {
+    align-items: center;
+}
+
+.about__osf__detail__ceo span {
+    color: #ff9d33;
+    font-weight: bold;
+}
+
+.about__osf__detail__ceo p {
+    font-style: italic;
+    font-size: 1rem;
+    color: black !important;
+    font-weight: bold;
+}
+
+.about__osf__detail__ceo h5 {
+    text-align: justify;
+}
+

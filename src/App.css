@@ -4,11 +4,11 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "KoHo", sans-serif;
 }
 
 body {
-  background: #14141f !important;
-  font-family: "KoHo", sans-serif;
+  background: white ; 
 }
 
 h1,
@@ -20,7 +20,7 @@ h2 {
 p {
   font-weight: 400;
   font-size: 1rem;
-  color: #fff;
+  color: #fff !important;
   opacity: 85%;
   line-height: 35px;
 }
@@ -43,4 +43,15 @@ ul {
 section,
 footer {
   padding: 60px 0px;
+}
+
+/* Custom Scroll-Bar */
+::-webkit-scrollbar {
+  width: 10px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: 2em;
+  background: #ff9d33
 }

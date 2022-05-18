@@ -1,0 +1,20 @@
+.event__collab__header p, span{
+    color: black !important;
+}
+
+span {
+    font-weight: bold;
+}
+
+.submit__btn {
+    border: 1px solid #1c2964;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+.submit__btn:hover {
+    background-color: #1c2964;
+    color: #ff9d33;
+}

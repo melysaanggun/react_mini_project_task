@@ -1,0 +1,49 @@
+.main__section {
+    margin: 150px 0;
+    background-color: white;
+}
+
+.main__section h1,h4{
+    color: #ff9d33;
+}
+
+.main__section h1 {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.main__section .line1_title {
+    padding-top: 80px;
+}
+
+.main__section h4 span {
+    color: #16c48e;
+    font-weight: bold;
+}
+
+.main__section button {
+    border: none;
+    outline: none;
+    padding: 7px 25px !important;
+    border: 1px solid #16c48e !important;
+    font-size: 0.9rem;
+    border-radius: 10px;
+    background-color: #16c48e;
+    transition: 0.3s;
+}
+
+.main__section button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.main__section button:hover {
+    background-color: #d7263d;
+    border: 1px solid #d7263d !important;
+}
+
+.main__img {
+    width: 600px;
+    height: 30x;
+}
+

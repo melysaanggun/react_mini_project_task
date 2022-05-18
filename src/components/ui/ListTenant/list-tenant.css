@@ -1,0 +1,82 @@
+.list__tenant__top h3{
+    font-weight: bold;
+}
+
+.list__tenant__top span a{
+    text-decoration: none;
+    color: #1c2960;
+    border-bottom: 1px solid #16c48e;
+}
+
+.single__list__card {
+    padding: 20px;
+    background: #1c2960;
+    border-radius: 10px;
+}
+
+.tenant__img img{
+    border-radius: 10px;
+}
+
+.tenant__img {
+    margin-bottom: 10px;
+}
+
+.brand_title {
+    color: #fff;
+    font-style: 1rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.brand_title a{
+    color:#fff;
+    text-decoration: none;
+}
+
+
+
+.brand__logo img {
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+}
+
+.brand__info h6 {
+    color: #fff;
+}
+
+.tenant__more__btn {
+    border: none;
+    outline: none;
+    padding: 5px 22px;
+    border: 1px solid #16c48e;
+    font-size: 0.9rem;
+    color: #16c48e;
+    border-radius: 20px;
+    background-color: #16c48e;
+    transition: 0.3s;
+}
+
+.tenant__more__btn:hover {
+    background-color: #ff9d33;
+    border: 1px solid #ff9d33;
+    font-style: 0.9rem;
+}
+
+.brand__btn__wrapper span a  {
+    text-decoration: none;
+    color: #fff;
+    opacity: 85%;
+}
+
+.brand__btn__wrapper span a:hover {
+    transition: 0.3s;
+    color: #ff9d33;
+}
+
+.tenant__more__btn a {
+    color: #fff;
+    font-family: 'KoHo';
+    text-decoration: none;
+}

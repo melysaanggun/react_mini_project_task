@@ -1,0 +1,42 @@
+h1 {
+    color: black;
+}
+
+.login__wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+    padding: 30px !important;
+    background-color: #eae5ca;
+}
+
+.login__wrapper img {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.login__wrapper h5 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.form__input input {
+    width: 100% !important;
+    background-color: #fff !important;
+    border-color: #fff !important;
+}
+
+.form__input label {
+    margin-bottom: 0 !important;
+    padding-left: 10px;
+}
+
+.submit__btn {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}

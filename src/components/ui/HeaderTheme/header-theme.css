@@ -1,0 +1,13 @@
+.header__theme {
+    background: url(../../../assets/images/Cover\ Form.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 150px;
+}
+
+.header__theme h2 {
+    color: #ff9d33;
+    font-weight: bold;
+    padding-bottom: 50px;
+}

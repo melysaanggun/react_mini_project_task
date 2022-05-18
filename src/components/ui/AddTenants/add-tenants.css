@@ -1,0 +1,34 @@
+.page__title {
+    text-align: left;
+    padding-left: 70px;
+}
+
+.add__tenant__container {
+    padding-left: 70px;
+}
+
+.form__input input {
+    width: 100%;
+    font-size: 1rem;
+    background: transparent;
+    border: 1px solid #1c6294;
+    outline: none;
+    border-radius: 5px;
+}
+
+.form__input {
+    margin-bottom: 15px;
+}
+
+.form__input label {
+    margin-bottom: 10px;
+}
+
+.form__input .upload__input {
+    align-items: center;
+}
+
+.upload__input__file {
+    outline: none;
+    border: none;
+}
