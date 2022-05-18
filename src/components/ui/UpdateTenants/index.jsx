@@ -11,6 +11,7 @@ import {
   GET_ALL_TENANTS,
   GET_TENANT_BY_ID,
 } from "../../../GraphQl/Tenants/queries";
+import LoadingSvg from "../../LoadingSvg";
 
 const UpdateTenants = () => {
   const { id } = useParams();
@@ -35,6 +36,10 @@ const UpdateTenants = () => {
       },
     }
   );
+
+  if (loadingUpdate) {
+    <LoadingSvg/>
+  }
 
   const [baseImage, setBaseImage] = useState("");
   const [baseImage2, setBaseImage2] = useState("");

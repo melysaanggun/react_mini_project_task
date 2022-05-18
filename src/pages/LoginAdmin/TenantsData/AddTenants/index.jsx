@@ -1,26 +1,38 @@
 import React, { useState } from "react";
-import HeaderAdmin from "../../HeaderAdmin";
+
+/**Component */
+import HeaderAdmin from "../../../../components/HeaderAdmin";
+
+/**React Strap */
 import { Container, Row, Col } from "reactstrap";
+
+/**Style */
 import "./add-tenants.css";
 import Swal from "sweetalert2";
+
 /**Query */
 import { useMutation } from "@apollo/client";
-import { ADD_TENANT, GET_ALL_TENANTS } from "../../../GraphQl/Tenants/queries";
+import { ADD_TENANT, GET_ALL_TENANTS } from "../../../../GraphQl/Tenants/queries";
+import LoadingSvg from "../../../../components/LoadingSvg";
 
 const AddTenants = () => {
-  const [insertForm] = useMutation(
+  const [insertForm, {loading:loadingAdd}] = useMutation(
     ADD_TENANT,
     {
       refetchQueries: [GET_ALL_TENANTS],
       onCompleted: (data) => {
         Swal.fire({
-          title: "Success!",
-          text: "Do you want to continue",
+          title: "NEW TENANT ADDED!",
+          text: "Press OK to continue",
           icon: "success",
         });
       },
     }
   );
+
+  if(loadingAdd) {
+    <LoadingSvg/>
+  }
 
   const [baseImage, setBaseImage] = useState("");
   const [baseImage2, setBaseImage2] = useState("");
@@ -100,13 +112,9 @@ const AddTenants = () => {
       <HeaderAdmin />
       <Container>
         <h1 className="page__title">ADD NEW TENANT</h1>
-        <div className="add__tenant__container">
+        <div>
           <Row>
-            <Col lg="3" md="4" sm="6">
-              <h5>Foto Outlet</h5>
-            </Col>
-
-            <Col lg="9" md="8" sm="6">
+            <Col lg="9" md="8" sm="6" className="add__tenant__container">
               <div className="create__item">
                 <form onSubmit={onSubmitForm}>
                   <div className="form__input">

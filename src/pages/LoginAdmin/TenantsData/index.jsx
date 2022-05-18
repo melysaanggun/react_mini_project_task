@@ -1,5 +1,5 @@
 import React from "react";
-import HeaderAdmin from "../../HeaderAdmin";
+import HeaderAdmin from "../../../components/HeaderAdmin";
 import "./tenants-data.css";
 import { Container, Row, Col } from "reactstrap";
 import { Link } from "react-router-dom";
@@ -31,7 +31,9 @@ const DeleteTenant = gql`
 const TenantsData = () => {
   const { data, loading, error } = useQuery(getAllTenants);
 
-  const [deleteTenant, { loading: loadingDelete }] = useMutation(DeleteTenant);
+  const [deleteTenant, { loading: loadingDelete }] = useMutation(DeleteTenant, {
+    refetchQueries: [getAllTenants],
+  });
 
   const settings = {
     focusOnSelect: true,
@@ -60,7 +62,7 @@ const TenantsData = () => {
                 <h1> Tenants Data </h1>
                 <span className="add___tenant__btn">
                   <i class="ri-add-circle-fill"></i>
-                  <Link to="/tenants-data/add-new-tenant">Add New Tenants</Link>
+                  <Link to="/tenants-data/add-new-tenant">Add New Tenant</Link>
                 </span>
               </div>
             </Col>
@@ -107,7 +109,7 @@ const TenantsData = () => {
                         </span>
                       </button>
 
-                      <button onClick={() => handleDelete(v.id)}>
+                      <button onClick={() => handleDelete(v.id)} className="delete__btn">
                         <Link to="/tenants-data">Delete</Link>
                       </button>
                     </div>

@@ -77,14 +77,14 @@ const EventsData = () => {
                     <div className="event__details">
                       <h2>{v.nama_event}</h2>
                       <p>{v.keterangan}</p>
-                      <button>
+                      <button className="tenant__more__btn">
                         <span>
                           <Link to={`/events-data/update-event-data/${v.id}`}>
                             Edit
                           </Link>
                         </span>
                       </button>
-                      <button onClick={() => handleDelete(v.id)}>
+                      <button onClick={() => handleDelete(v.id)} className="delete__btn">
                         <Link to="/events-data">Delete</Link>
                       </button>
                     </div>

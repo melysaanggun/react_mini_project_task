@@ -5,7 +5,7 @@
 
 .nav__logo span {
     font-size: 2rem;
-    color: #16c48e;
+    color: #16c48e !important;
     padding-top: 20px;
 }
 
@@ -21,11 +21,11 @@
 }
 
 .nav_link i, span {
-    color: #fff;
+    color: #fff !important;
 }
 
 .nav_link span:hover {
-    color: #ff9d33;
+    color: #ff9d33 !important;
 }
 
 
@@ -39,9 +39,9 @@
 }
 
 .logout__btn i {
-    color: #d7263d;
+    color: #d7263d !important;
 }
 
 .logout__btn span {
-    color: #d7263d;
+    color: #d7263d !important;
 }

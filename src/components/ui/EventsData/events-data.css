@@ -7,8 +7,8 @@
 }
 
 .add___event__btn {
-    border: 1px solid #16c48e;
-    background-color: #16c48e;
+    border: 1px solid #1c2960;
+    background-color: #1c2960;
     border-radius: 50px;
     padding: 10px;
 }
@@ -17,4 +17,8 @@
     padding-left: 15px;
     text-decoration: none;
     color: white;
+}
+
+.list-event-wrapper {
+    margin-left: 100px;
 }

@@ -2,6 +2,7 @@ import React from "react";
 
 /**Styles */
 import "./feedback.css";
+import Swal from "sweetalert2";
 
 /**Components */
 import HeaderTheme from "../../../components/ui/HeaderTheme";
@@ -49,7 +50,15 @@ const Feedback = () => {
     },
   ]);
 
-  const [addForm, { loading: loadingAdd }] = useMutation(AddToFeedbackForm);
+  const [addForm, { loading: loadingAdd }] = useMutation(AddToFeedbackForm, {
+    onCompleted: (data) => {
+      Swal.fire({
+        title: "SUBMIT SUCCESS!",
+        text: "Press OK to continue",
+        icon: "success",
+      });
+    }
+  });
 
   const handleInput = (value, inputIdx) => {
     const newInputs = { ...inputs[inputIdx], value };

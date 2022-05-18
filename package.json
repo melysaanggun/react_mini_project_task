@@ -11,6 +11,7 @@
     "get-youtube-id": "^1.0.1",
     "google-maps-react": "^2.0.6",
     "graphql": "^16.5.0",
+    "netlify-cli": "^10.3.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-instagram-embed": "^3.0.0",
@@ -22,6 +23,7 @@
     "remixicon": "^2.5.0",
     "remixicon-react": "^1.0.0",
     "slick-carousel": "^1.8.1",
+    "surge": "^0.23.1",
     "sweetalert2": "^11.4.14",
     "web-vitals": "^2.1.4"
   },

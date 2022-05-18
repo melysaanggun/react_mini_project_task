@@ -79,7 +79,7 @@ const ListEvents = () => {
             </div>
           </Col>
           
-          <div className="list-event-wrapper">
+          <div className="list-event-wrapper-home">
             <Slider {...settings}>
               {data?.events.map((v, idx) => (
                 <Col lg="6" key={idx} className="list-single-event m-0.5">

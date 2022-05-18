@@ -2,6 +2,7 @@ import React from "react";
 
 /**Styles */
 import "./join-tenant.css";
+import Swal from "sweetalert2";
 
 /**Components */
 import HeaderTheme from "../../../components/ui/HeaderTheme";
@@ -64,7 +65,15 @@ const JoinTenant = () => {
     },
   ]);
 
-  const [addForm, { loading: loadingAdd }] = useMutation(AddToTenantForm);
+  const [addForm, { data, loading: loadingAdd }] = useMutation(AddToTenantForm, {
+    onCompleted: (data) => {
+      Swal.fire({
+        title: "SUBMIT SUCCESS!",
+        text: "Press OK to continue",
+        icon: "success",
+      });
+    }
+  });
 
   const handleInput = (value, inputIdx) => {
     const newInputs = { ...inputs[inputIdx], value };

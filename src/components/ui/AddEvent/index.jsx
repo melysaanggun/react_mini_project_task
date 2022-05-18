@@ -104,11 +104,7 @@ const AddEvent = () => {
         <h1 className="page__title">ADD NEW EVENT</h1>
         <div className="add__tenant__container">
           <Row>
-            <Col lg="3" md="4" sm="6">
-              <h5>Foto Event</h5>
-            </Col>
-
-            <Col lg="9" md="8" sm="6">
+            <Col lg="9" md="8" sm="6" className="add_tenant_center">
               <div className="create__item">
                 <form onSubmit={onSubmitForm}>
                   <div className="form__input">

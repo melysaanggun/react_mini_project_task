@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 /**Styles */
 import LoadingSvg from "../../LoadingSvg";
 import "./list-tenant.css";
+import Slider from "react-slick";
 
 /**Query */
 import { useQuery } from "@apollo/client";
@@ -14,6 +15,14 @@ import { GET_ALL_TENANTS } from "../../../GraphQl/Tenants/queries";
 
 const ListTenant = () => {
   const { data, loading, error } = useQuery(GET_ALL_TENANTS);
+
+  const settings = {
+    focusOnSelect: true,
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    speed: 500,
+  };
 
   if (error) {
     console.log(error);
@@ -37,7 +46,8 @@ const ListTenant = () => {
             </div>
           </Col>
 
-          {data?.tenants.slice(0, 4).map((v, idx) => (
+          <Slider {...settings}>
+          {data?.tenants.map((v, idx) => (
             <Col lg="3" key={idx}>
               <div className="single__list__card">
                 <div className="tenant__img">
@@ -75,6 +85,7 @@ const ListTenant = () => {
               </div>
             </Col>
           ))}
+          </Slider>
         </Row>
       </Container>
     </section>

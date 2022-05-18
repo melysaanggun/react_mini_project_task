@@ -154,11 +154,15 @@ const UpdateEvents = () => {
     <>
       <HeaderAdmin />
       <Container>
-        <h1 className="page__title">ADD NEW EVENT</h1>
+        <h1 className="page__title">UPDATE EVENT</h1>
         <div className="add__tenant__container">
           <Row>
             <Col lg="3" md="4" sm="6">
               <h5>Foto Event</h5>
+              <img
+                  src={dataEventbyId?.events_by_pk.foto_event}
+                  alt="GambarEvent"
+                />
             </Col>
 
             <Col lg="9" md="8" sm="6">

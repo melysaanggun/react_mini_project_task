@@ -2,6 +2,7 @@ import React from 'react'
 
 /**Styles */
 import "./event-collab.css"
+import Swal from 'sweetalert2';
 
 /**Components */
 import HeaderTheme from "../../../components/ui/HeaderTheme";
@@ -46,7 +47,15 @@ const EventCollab = () => {
         },
       ]);
 
-      const [addForm, { loading: loadingAdd }] = useMutation(addEventForm);
+      const [addForm, { loading: loadingAdd }] = useMutation(addEventForm, {
+        onCompleted: (data) => {
+          Swal.fire({
+            title: "SUBMIT SUCCESS!",
+            text: "Press OK to continue",
+            icon: "success",
+          });
+        }
+      });
 
       const handleInput = (value, inputIdx) => {
         const newInputs = { ...inputs[inputIdx], value };
